@@ -28,7 +28,7 @@ public class serv
 
                 Console.WriteLine("Server info : {0}", myList.LocalEndpoint);
                 Console.WriteLine("Waiting for connection {0}...", count);
-
+                // Add check if not client gtfo
                 Socket s = myList.AcceptSocket();
                 Console.WriteLine("Connection accepted from {0}", s.RemoteEndPoint);
 
